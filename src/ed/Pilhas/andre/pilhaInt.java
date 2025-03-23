@@ -17,7 +17,7 @@ public class pilhaInt {
 		}
 	}
 	
-	public void push(int valor) {
+	public void push(int valor) {//Inserir dados na pilha
 		no element = new no();
 		element.dado = valor;
 		if(isEmpty()) {
@@ -28,7 +28,7 @@ public class pilhaInt {
 		}
 	}
 	
-	public int pop() throws Exception {
+	public int pop() throws Exception {//remover o primeiro dado da pilha
 		if(isEmpty()) {
 			throw new Exception("Pilha vazia");
 		}else {
@@ -38,7 +38,7 @@ public class pilhaInt {
 		}
 	}
 	
-	public int top()throws Exception{
+	public int top()throws Exception{//mostrar o primeiro dado da pilha
 		if(!isEmpty()) {
 			int valor = topo.dado;
 			return valor;
@@ -47,7 +47,7 @@ public class pilhaInt {
 		}
 	}
 
-	public int size() {
+	public int size() {//mostrar o tamanho da pilha 
 		int cont = 0;
 		if(!isEmpty()) {
 			no auxiliar = topo;
@@ -60,7 +60,7 @@ public class pilhaInt {
 		return cont;
 	}
 	
-	public int max() throws Exception{
+	public int max() throws Exception{//mostrar o maior dado da pilha 
 		int maior = 0;
 		pilhaInt pInt = new pilhaInt();
 		int size = size();

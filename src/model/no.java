@@ -5,5 +5,4 @@ public class no {
 	public no proximo;
 	public String dadoString;
 	public no proximoString;
-	
 }

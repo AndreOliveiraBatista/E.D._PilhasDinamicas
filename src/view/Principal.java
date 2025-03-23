@@ -21,8 +21,7 @@ public class Principal {
 			
 			topo = pString.top();
 			System.out.println("topo = "+topo);
-			
-			
+		
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
