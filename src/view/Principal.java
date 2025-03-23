@@ -27,21 +27,23 @@ public class Principal {
 			e.printStackTrace();
 		}
 		
+		for(int i = 0; i < 10; i++) {
+				pInt.push(i);
+		}		
+		
 		try {
-			pInt.push(2);
-			int topo = pInt.top();
-			System.out.println("topo = "+topo);
-			
-			pInt.push(3);
-			System.out.println(pInt.pop());
-			
-			topo = pInt.top();
-			System.out.println("topo = "+topo);
-			
-			
+			int maior = pInt.max();
+			System.out.println(maior);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
+		for(int i = 0; i < 10; i++) {
+			try {
+				System.out.println(pInt.pop());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
-
 }

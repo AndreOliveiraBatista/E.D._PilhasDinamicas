@@ -59,4 +59,22 @@ public class pilhaInt {
 		}
 		return cont;
 	}
+	
+	public int max() throws Exception{
+		int maior = 0;
+		pilhaInt pInt = new pilhaInt();
+		int size = size();
+		for (int i = 0; i < size; i++) {
+			int valor = pop();
+			pInt.push(valor);
+			if (maior < valor) {
+				maior = valor;
+			}
+		}
+		
+		for(int i = 0; i < size; i++) {
+			push(pInt.pop());
+		}
+		return maior;
+	}
 }
