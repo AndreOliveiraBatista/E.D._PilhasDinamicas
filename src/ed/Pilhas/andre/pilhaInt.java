@@ -9,7 +9,7 @@ public class pilhaInt {
 		topo = null;
 	}
 	
-	public boolean isEmpty() {
+	public boolean isEmpty() {//mostrar se a pilha está vazia 
 		if(topo == null) {
 			return true;
 		}else {
